@@ -33,6 +33,26 @@ public class EventosController {
         return new ResponseEntity<List<EventoDTO>>(listDTO, HttpStatus.OK);
     }
 
+    @PutMapping("/evento")
+    public ResponseEntity<EventoDTO> update(@RequestBody EventoDTO eventoDTO) throws Exception {
+        Eventos a;
+        a = convertToEntity(eventoDTO);
+        eventoDTO = convertToDto(eventoService.update(a));
+        return new ResponseEntity<EventoDTO>(eventoDTO, HttpStatus.OK);
+    }
+
+    @DeleteMapping("/evento/{id}")
+    public ResponseEntity<EventoDTO> delete(@PathVariable(value = "id") Long id) throws Exception{
+        Eventos deleteEvento = eventoService.delete(id);
+        return new ResponseEntity<EventoDTO>(convertToDto(deleteEvento), HttpStatus.OK);
+    }
+
+    @GetMapping("/eventos/{prefijo}")
+    public ResponseEntity<List<EventoDTO>> listFirstname(@PathVariable(value = "prefijo") String prefijo){
+        List<Eventos> eventosBuscar = eventoService.listFirstName(prefijo);
+        return new ResponseEntity<List<EventoDTO>>(convertToListDto(eventosBuscar), HttpStatus.OK);
+    }
+
     private List<EventoDTO> convertToListDto(List<Eventos> list) {
         return list.stream().map(this::convertToDto).collect(Collectors.toList());
     }
