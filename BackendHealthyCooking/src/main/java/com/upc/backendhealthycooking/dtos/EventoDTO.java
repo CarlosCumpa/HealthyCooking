@@ -27,4 +27,5 @@ public class EventoDTO {
     private String ubicacion;
     @Column(length = 120,nullable = false)
     private String descripcion;
+
 }
