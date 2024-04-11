@@ -1,15 +1,19 @@
 package com.upc.healthycookingb.controller;
 
+import com.upc.healthycookingb.dtos.EventoDTO;
+import com.upc.healthycookingb.entities.Evento;
 import jakarta.transaction.Transactional;
 import org.modelmapper.ModelMapper;
-import org.hibernate.Hibernate;
 import com.upc.healthycookingb.dtos.TipoplaneDTO;
 import com.upc.healthycookingb.entities.Tipoplane;
 import com.upc.healthycookingb.services.TipoplaneService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.server.ResponseStatusException;
 
 import java.util.List;
 import java.util.stream.Collectors;
@@ -18,15 +22,24 @@ import java.util.stream.Collectors;
 @RequestMapping("/api")
 public class TipoplaneController {
     @Autowired
-    private TipoplaneService tipoplaneService;
+    public TipoplaneService tipoplaneService;
 
-    @PostMapping("/plan")
+
+    Logger logger = LoggerFactory.getLogger(TipoplaneController.class);
     @Transactional
-    public ResponseEntity<TipoplaneDTO> save(@RequestBody TipoplaneDTO tipoDePlanesDTO){
-        Tipoplane p;
-        p = convertToEntity(tipoDePlanesDTO);
-        tipoDePlanesDTO = convertToDto1(tipoplaneService.save(p));
-        return new ResponseEntity<TipoplaneDTO>(tipoDePlanesDTO, HttpStatus.OK);
+    @PostMapping("/plan")
+    public ResponseEntity<TipoplaneDTO> save(@RequestBody TipoplaneDTO tipoplaneDTO){
+        Tipoplane tipoplane;
+        try {
+            logger.debug("creando evento");
+            tipoplane = convertToEntity(tipoplaneDTO);
+            tipoplaneDTO = convertToDto1(tipoplaneService.save(tipoplane));
+        }catch (Exception e){
+            logger.error("Error de creacion", e);
+            throw new ResponseStatusException(HttpStatus.NOT_FOUND, "No se pudo crear, sorry", e);
+
+        }
+        return new ResponseEntity<TipoplaneDTO>(tipoplaneDTO,HttpStatus.OK);
     }
 
     @GetMapping("/planes")
@@ -38,18 +51,37 @@ public class TipoplaneController {
 
     @Transactional
     @PutMapping("/plan")
-    public ResponseEntity<TipoplaneDTO> update(@RequestBody TipoplaneDTO tipoDePlanesDTO) throws Exception {
-        Tipoplane p;
-        p = convertToEntity(tipoDePlanesDTO);
-        tipoDePlanesDTO = convertToDto1(tipoplaneService.update(p));
-        return new ResponseEntity<TipoplaneDTO>(tipoDePlanesDTO, HttpStatus.OK);
+    public ResponseEntity<TipoplaneDTO> update(@RequestBody TipoplaneDTO planDetalle) {
+        TipoplaneDTO tipoplaneDTO;
+        Tipoplane tipoplane;
+        try {
+            tipoplane = convertToEntity(planDetalle);
+            logger.debug("Actualizando Producto");
+            tipoplane = tipoplaneService.update(tipoplane);
+            logger.debug("Producto actualizado");
+            tipoplaneDTO =convertToDto1(tipoplane);
+            return new ResponseEntity<TipoplaneDTO>(tipoplaneDTO,HttpStatus.OK);
+        }catch (Exception e){
+            logger.error("Error de actualización",e);
+            throw new ResponseStatusException(HttpStatus.NOT_FOUND, "No se pudo actualizar, sorry");
+        }
     }
 
     @Transactional
     @DeleteMapping("/plan/{id}")
-    public ResponseEntity<TipoplaneDTO> delete(@PathVariable(value = "id") Integer id) throws Exception{
-        Tipoplane deletePlan = tipoplaneService.delete(id);
-        return new ResponseEntity<>(convertToDto1(deletePlan), HttpStatus.OK);
+    public ResponseEntity<TipoplaneDTO> delete(@PathVariable(value = "id") Integer id) {
+        TipoplaneDTO tipoplaneDTO;
+        Tipoplane tipoplane;
+        try {
+            tipoplane = tipoplaneService.delete(id);
+            logger.debug("Elimiando objeto");
+            tipoplaneDTO = convertToDto1(tipoplane);
+            return new ResponseEntity<TipoplaneDTO>(tipoplaneDTO,HttpStatus.OK);
+        }catch (Exception e){
+            logger.error("Error de eliminacion",e);
+            throw new ResponseStatusException(HttpStatus.NOT_FOUND,"No se pudo eliminar sorry");
+
+        }
     }
 
     @GetMapping("/planes/{prefijo}")

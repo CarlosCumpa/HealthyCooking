@@ -15,9 +15,11 @@ public class TipoplaneService {
     private TipoplaneRepository tipoplaneRepository;
 
 
+
     public Tipoplane save(Tipoplane tipoDePlanes){return tipoplaneRepository.save(tipoDePlanes);}
 
     public List<Tipoplane> list(){return tipoplaneRepository.findAll();}
+
 
 
 
@@ -25,6 +27,7 @@ public class TipoplaneService {
         tipoplaneRepository.findById(tipoDePlanes.getId()).orElseThrow(()-> new Exception("No se actualizó"));
         return tipoplaneRepository.save(tipoDePlanes);//actualiza si existe el author
     }
+
 
 
     public Tipoplane delete(Integer id) throws Exception {
