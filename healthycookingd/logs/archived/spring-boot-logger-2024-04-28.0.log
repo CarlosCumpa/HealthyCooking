@@ -1,0 +1,939 @@
+2024-04-28 12:22:31,007 INFO c.u.h.HealthycookingdApplication [restartedMain] Starting HealthycookingdApplication using Java 17.0.10 with PID 16464 (C:\IDEA-JAVA\HealthyCooking-main\HealthyCooking-main\healthycookingd\target\classes started by CARLOS in C:\IDEA-JAVA\HealthyCooking-main\HealthyCooking-main\healthycookingd)
+2024-04-28 12:22:31,011 INFO c.u.h.HealthycookingdApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2024-04-28 12:22:31,062 INFO o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-04-28 12:22:31,064 INFO o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-04-28 12:22:31,801 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-28 12:22:31,876 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 63 ms. Found 7 JPA repository interfaces.
+2024-04-28 12:22:32,115 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-04-28 12:22:32,152 INFO o.s.w.s.a.s.AnnotationActionEndpointMapping [restartedMain] Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-04-28 12:22:32,463 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2024-04-28 12:22:32,471 INFO o.a.c.h.Http11NioProtocol [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2024-04-28 12:22:32,473 INFO o.a.c.c.StandardService [restartedMain] Starting service [Tomcat]
+2024-04-28 12:22:32,473 INFO o.a.c.c.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-04-28 12:22:32,524 INFO o.a.c.c.C.[.[.[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2024-04-28 12:22:32,525 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1461 ms
+2024-04-28 12:22:32,653 INFO o.h.j.i.u.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-28 12:22:32,731 INFO o.h.Version [restartedMain] HHH000412: Hibernate ORM core version 6.2.24.Final
+2024-04-28 12:22:32,737 INFO o.h.c.Environment [restartedMain] HHH000406: Using bytecode reflection optimizer
+2024-04-28 12:22:33,041 INFO o.s.o.j.p.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-28 12:22:33,067 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2024-04-28 12:22:33,238 INFO c.z.h.p.HikariPool [restartedMain] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6264d494
+2024-04-28 12:22:33,239 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2024-04-28 12:22:33,284 WARN o.h.o.deprecation [restartedMain] HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-04-28 12:22:34,119 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [restartedMain] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-28 12:22:34,233 WARN o.h.e.j.s.SqlExceptionHelper [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2024-04-28 12:22:34,233 WARN o.h.e.j.s.SqlExceptionHelper [restartedMain] no existe la restricción «uk_1ryhh184eq01ul8gbiiam8y6o» en la relación «perfilusuario», omitiendo
+2024-04-28 12:22:34,238 WARN o.h.e.j.s.SqlExceptionHelper [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2024-04-28 12:22:34,238 WARN o.h.e.j.s.SqlExceptionHelper [restartedMain] no existe la restricción «uk_owcisk9xlno8xkx4grthkvhu0» en la relación «perfilusuario», omitiendo
+2024-04-28 12:22:34,242 WARN o.h.e.j.s.SqlExceptionHelper [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2024-04-28 12:22:34,242 WARN o.h.e.j.s.SqlExceptionHelper [restartedMain] no existe la restricción «uk_aeecegguqjods3xuiq76l6grh» en la relación «perfilusuario», omitiendo
+2024-04-28 12:22:34,246 WARN o.h.e.j.s.SqlExceptionHelper [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2024-04-28 12:22:34,247 WARN o.h.e.j.s.SqlExceptionHelper [restartedMain] no existe la restricción «uk_i49bngv1lyst9sqn888xegjxu» en la relación «perfilusuario», omitiendo
+2024-04-28 12:22:34,266 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-28 12:22:34,742 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-28 12:22:35,115 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2024-04-28 12:22:35,134 INFO o.a.c.h.Http11NioProtocol [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2024-04-28 12:22:35,151 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2024-04-28 12:22:35,160 INFO c.u.h.HealthycookingdApplication [restartedMain] Started HealthycookingdApplication in 4.61 seconds (process running for 5.37)
+2024-04-28 12:23:46,241 INFO o.a.c.c.C.[.[.[/] [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-28 12:23:46,242 INFO o.s.w.s.DispatcherServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2024-04-28 12:23:46,245 INFO o.s.w.s.DispatcherServlet [http-nio-8080-exec-1] Completed initialization in 3 ms
+2024-04-28 12:23:47,301 INFO o.s.a.AbstractOpenApiResource [http-nio-8080-exec-7] Init duration for springdoc-openapi is: 501 ms
+2024-04-28 12:26:46,159 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-28 12:26:46,163 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2024-04-28 12:26:46,165 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2024-04-28 12:27:34,617 INFO c.u.h.HealthycookingdApplication [restartedMain] Starting HealthycookingdApplication using Java 17.0.10 with PID 13904 (C:\IDEA-JAVA\HealthyCooking-main\HealthyCooking-main\healthycookingd\target\classes started by CARLOS in C:\IDEA-JAVA\HealthyCooking-main\HealthyCooking-main\healthycookingd)
+2024-04-28 12:27:34,618 INFO c.u.h.HealthycookingdApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2024-04-28 12:27:34,652 INFO o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-04-28 12:27:34,652 INFO o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-04-28 12:27:35,261 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-28 12:27:35,329 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 63 ms. Found 7 JPA repository interfaces.
+2024-04-28 12:27:35,547 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-04-28 12:27:35,574 INFO o.s.w.s.a.s.AnnotationActionEndpointMapping [restartedMain] Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-04-28 12:27:35,850 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2024-04-28 12:27:35,859 INFO o.a.c.h.Http11NioProtocol [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2024-04-28 12:27:35,861 INFO o.a.c.c.StandardService [restartedMain] Starting service [Tomcat]
+2024-04-28 12:27:35,861 INFO o.a.c.c.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-04-28 12:27:35,917 INFO o.a.c.c.C.[.[.[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2024-04-28 12:27:35,917 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1264 ms
+2024-04-28 12:27:36,049 INFO o.h.j.i.u.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-28 12:27:36,130 INFO o.h.Version [restartedMain] HHH000412: Hibernate ORM core version 6.2.24.Final
+2024-04-28 12:27:36,132 INFO o.h.c.Environment [restartedMain] HHH000406: Using bytecode reflection optimizer
+2024-04-28 12:27:36,406 INFO o.s.o.j.p.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-28 12:27:36,431 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2024-04-28 12:27:36,569 INFO c.z.h.p.HikariPool [restartedMain] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2c743344
+2024-04-28 12:27:36,570 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2024-04-28 12:27:36,604 WARN o.h.o.deprecation [restartedMain] HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-04-28 12:27:37,424 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [restartedMain] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-28 12:27:37,534 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-28 12:27:37,927 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-28 12:27:38,256 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2024-04-28 12:27:38,271 INFO o.a.c.h.Http11NioProtocol [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2024-04-28 12:27:38,287 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2024-04-28 12:27:38,296 INFO c.u.h.HealthycookingdApplication [restartedMain] Started HealthycookingdApplication in 4.061 seconds (process running for 4.655)
+2024-04-28 12:27:43,095 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-28 12:27:43,097 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2024-04-28 12:27:43,099 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2024-04-28 12:28:09,535 INFO c.u.h.HealthycookingdApplication [restartedMain] Starting HealthycookingdApplication using Java 17.0.10 with PID 1672 (C:\IDEA-JAVA\HealthyCooking-main\HealthyCooking-main\healthycookingd\target\classes started by CARLOS in C:\IDEA-JAVA\HealthyCooking-main\HealthyCooking-main\healthycookingd)
+2024-04-28 12:28:09,537 INFO c.u.h.HealthycookingdApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2024-04-28 12:28:09,567 INFO o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-04-28 12:28:09,567 INFO o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-04-28 12:28:10,116 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-28 12:28:10,179 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 51 ms. Found 7 JPA repository interfaces.
+2024-04-28 12:28:10,375 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-04-28 12:28:10,395 INFO o.s.w.s.a.s.AnnotationActionEndpointMapping [restartedMain] Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-04-28 12:28:10,615 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2024-04-28 12:28:10,621 INFO o.a.c.h.Http11NioProtocol [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2024-04-28 12:28:10,623 INFO o.a.c.c.StandardService [restartedMain] Starting service [Tomcat]
+2024-04-28 12:28:10,623 INFO o.a.c.c.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-04-28 12:28:10,668 INFO o.a.c.c.C.[.[.[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2024-04-28 12:28:10,668 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1101 ms
+2024-04-28 12:28:10,782 INFO o.h.j.i.u.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-28 12:28:10,819 INFO o.h.Version [restartedMain] HHH000412: Hibernate ORM core version 6.2.24.Final
+2024-04-28 12:28:10,821 INFO o.h.c.Environment [restartedMain] HHH000406: Using bytecode reflection optimizer
+2024-04-28 12:28:11,019 INFO o.s.o.j.p.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-28 12:28:11,042 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2024-04-28 12:28:11,194 INFO c.z.h.p.HikariPool [restartedMain] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7239f88e
+2024-04-28 12:28:11,195 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2024-04-28 12:28:11,219 WARN o.h.o.deprecation [restartedMain] HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-04-28 12:28:11,897 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [restartedMain] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-28 12:28:11,978 WARN o.h.e.j.s.SqlExceptionHelper [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2024-04-28 12:28:11,979 WARN o.h.e.j.s.SqlExceptionHelper [restartedMain] no existe la restricción «uk_1ryhh184eq01ul8gbiiam8y6o» en la relación «perfilusuario», omitiendo
+2024-04-28 12:28:11,982 WARN o.h.e.j.s.SqlExceptionHelper [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2024-04-28 12:28:11,982 WARN o.h.e.j.s.SqlExceptionHelper [restartedMain] no existe la restricción «uk_owcisk9xlno8xkx4grthkvhu0» en la relación «perfilusuario», omitiendo
+2024-04-28 12:28:11,985 WARN o.h.e.j.s.SqlExceptionHelper [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2024-04-28 12:28:11,985 WARN o.h.e.j.s.SqlExceptionHelper [restartedMain] no existe la restricción «uk_aeecegguqjods3xuiq76l6grh» en la relación «perfilusuario», omitiendo
+2024-04-28 12:28:11,987 WARN o.h.e.j.s.SqlExceptionHelper [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2024-04-28 12:28:11,988 WARN o.h.e.j.s.SqlExceptionHelper [restartedMain] no existe la restricción «uk_i49bngv1lyst9sqn888xegjxu» en la relación «perfilusuario», omitiendo
+2024-04-28 12:28:11,999 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-28 12:28:12,419 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-28 12:28:12,730 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2024-04-28 12:28:12,744 INFO o.a.c.h.Http11NioProtocol [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2024-04-28 12:28:12,757 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2024-04-28 12:28:12,766 INFO c.u.h.HealthycookingdApplication [restartedMain] Started HealthycookingdApplication in 3.595 seconds (process running for 4.11)
+2024-04-28 12:28:17,546 INFO o.a.c.c.C.[.[.[/] [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-28 12:28:17,546 INFO o.s.w.s.DispatcherServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2024-04-28 12:28:17,547 INFO o.s.w.s.DispatcherServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2024-04-28 12:28:18,233 INFO o.s.a.AbstractOpenApiResource [http-nio-8080-exec-5] Init duration for springdoc-openapi is: 423 ms
+2024-04-28 12:38:18,889 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] [http-nio-8080-exec-7] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.IllegalStateException: Ambiguous handler methods mapped for '/api/recetas/1': {public org.springframework.http.ResponseEntity com.upc.healthycookingd.controller.RecetaController.obtenerObjetivosReceta(java.lang.String), public org.springframework.http.ResponseEntity com.upc.healthycookingd.controller.RecetaController.list(java.lang.Integer)}] with root cause
+java.lang.IllegalStateException: Ambiguous handler methods mapped for '/api/recetas/1': {public org.springframework.http.ResponseEntity com.upc.healthycookingd.controller.RecetaController.obtenerObjetivosReceta(java.lang.String), public org.springframework.http.ResponseEntity com.upc.healthycookingd.controller.RecetaController.list(java.lang.Integer)}
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lookupHandlerMethod(AbstractHandlerMethodMapping.java:431)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:382)
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:126)
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:68)
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:505)
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1275)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-04-28 12:41:32,861 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] [http-nio-8080-exec-1] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.IllegalStateException: Ambiguous handler methods mapped for '/api/recetas/Comer': {public org.springframework.http.ResponseEntity com.upc.healthycookingd.controller.RecetaController.obtenerObjetivosReceta(java.lang.String), public org.springframework.http.ResponseEntity com.upc.healthycookingd.controller.RecetaController.list(java.lang.Integer)}] with root cause
+java.lang.IllegalStateException: Ambiguous handler methods mapped for '/api/recetas/Comer': {public org.springframework.http.ResponseEntity com.upc.healthycookingd.controller.RecetaController.obtenerObjetivosReceta(java.lang.String), public org.springframework.http.ResponseEntity com.upc.healthycookingd.controller.RecetaController.list(java.lang.Integer)}
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lookupHandlerMethod(AbstractHandlerMethodMapping.java:431)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:382)
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:126)
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:68)
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:505)
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1275)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-04-28 12:41:44,929 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] [http-nio-8080-exec-2] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.IllegalStateException: Ambiguous handler methods mapped for '/api/recetas/san': {public org.springframework.http.ResponseEntity com.upc.healthycookingd.controller.RecetaController.obtenerObjetivosReceta(java.lang.String), public org.springframework.http.ResponseEntity com.upc.healthycookingd.controller.RecetaController.list(java.lang.Integer)}] with root cause
+java.lang.IllegalStateException: Ambiguous handler methods mapped for '/api/recetas/san': {public org.springframework.http.ResponseEntity com.upc.healthycookingd.controller.RecetaController.obtenerObjetivosReceta(java.lang.String), public org.springframework.http.ResponseEntity com.upc.healthycookingd.controller.RecetaController.list(java.lang.Integer)}
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lookupHandlerMethod(AbstractHandlerMethodMapping.java:431)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:382)
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:126)
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:68)
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:505)
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1275)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-04-28 12:42:02,144 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] [http-nio-8080-exec-10] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.IllegalStateException: Ambiguous handler methods mapped for '/api/recetas/C': {public org.springframework.http.ResponseEntity com.upc.healthycookingd.controller.RecetaController.obtenerObjetivosReceta(java.lang.String), public org.springframework.http.ResponseEntity com.upc.healthycookingd.controller.RecetaController.list(java.lang.Integer)}] with root cause
+java.lang.IllegalStateException: Ambiguous handler methods mapped for '/api/recetas/C': {public org.springframework.http.ResponseEntity com.upc.healthycookingd.controller.RecetaController.obtenerObjetivosReceta(java.lang.String), public org.springframework.http.ResponseEntity com.upc.healthycookingd.controller.RecetaController.list(java.lang.Integer)}
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lookupHandlerMethod(AbstractHandlerMethodMapping.java:431)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:382)
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:126)
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:68)
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:505)
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1275)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-04-28 12:42:27,985 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] [http-nio-8080-exec-3] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.IllegalStateException: Ambiguous handler methods mapped for '/api/recetas/Bro': {public org.springframework.http.ResponseEntity com.upc.healthycookingd.controller.RecetaController.obtenerObjetivosReceta(java.lang.String), public org.springframework.http.ResponseEntity com.upc.healthycookingd.controller.RecetaController.list(java.lang.Integer)}] with root cause
+java.lang.IllegalStateException: Ambiguous handler methods mapped for '/api/recetas/Bro': {public org.springframework.http.ResponseEntity com.upc.healthycookingd.controller.RecetaController.obtenerObjetivosReceta(java.lang.String), public org.springframework.http.ResponseEntity com.upc.healthycookingd.controller.RecetaController.list(java.lang.Integer)}
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lookupHandlerMethod(AbstractHandlerMethodMapping.java:431)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:382)
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:126)
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:68)
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:505)
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1275)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-04-28 12:42:48,339 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] [http-nio-8080-exec-5] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.IllegalStateException: Ambiguous handler methods mapped for '/api/recetas/Ensalada': {public org.springframework.http.ResponseEntity com.upc.healthycookingd.controller.RecetaController.obtenerObjetivosReceta(java.lang.String), public org.springframework.http.ResponseEntity com.upc.healthycookingd.controller.RecetaController.list(java.lang.Integer)}] with root cause
+java.lang.IllegalStateException: Ambiguous handler methods mapped for '/api/recetas/Ensalada': {public org.springframework.http.ResponseEntity com.upc.healthycookingd.controller.RecetaController.obtenerObjetivosReceta(java.lang.String), public org.springframework.http.ResponseEntity com.upc.healthycookingd.controller.RecetaController.list(java.lang.Integer)}
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lookupHandlerMethod(AbstractHandlerMethodMapping.java:431)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:382)
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:126)
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:68)
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:505)
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1275)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-04-28 12:42:55,526 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] [http-nio-8080-exec-8] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.IllegalStateException: Ambiguous handler methods mapped for '/api/recetas/En': {public org.springframework.http.ResponseEntity com.upc.healthycookingd.controller.RecetaController.obtenerObjetivosReceta(java.lang.String), public org.springframework.http.ResponseEntity com.upc.healthycookingd.controller.RecetaController.list(java.lang.Integer)}] with root cause
+java.lang.IllegalStateException: Ambiguous handler methods mapped for '/api/recetas/En': {public org.springframework.http.ResponseEntity com.upc.healthycookingd.controller.RecetaController.obtenerObjetivosReceta(java.lang.String), public org.springframework.http.ResponseEntity com.upc.healthycookingd.controller.RecetaController.list(java.lang.Integer)}
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lookupHandlerMethod(AbstractHandlerMethodMapping.java:431)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:382)
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:126)
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:68)
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:505)
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1275)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-04-28 12:43:11,081 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] [http-nio-8080-exec-6] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.IllegalStateException: Ambiguous handler methods mapped for '/api/recetas/P': {public org.springframework.http.ResponseEntity com.upc.healthycookingd.controller.RecetaController.obtenerObjetivosReceta(java.lang.String), public org.springframework.http.ResponseEntity com.upc.healthycookingd.controller.RecetaController.list(java.lang.Integer)}] with root cause
+java.lang.IllegalStateException: Ambiguous handler methods mapped for '/api/recetas/P': {public org.springframework.http.ResponseEntity com.upc.healthycookingd.controller.RecetaController.obtenerObjetivosReceta(java.lang.String), public org.springframework.http.ResponseEntity com.upc.healthycookingd.controller.RecetaController.list(java.lang.Integer)}
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lookupHandlerMethod(AbstractHandlerMethodMapping.java:431)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:382)
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:126)
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:68)
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:505)
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1275)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-04-28 12:46:10,034 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-28 12:46:10,039 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2024-04-28 12:46:10,043 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2024-04-28 12:46:27,805 INFO c.u.h.HealthycookingdApplication [restartedMain] Starting HealthycookingdApplication using Java 17.0.10 with PID 10608 (C:\IDEA-JAVA\HealthyCooking-main\HealthyCooking-main\healthycookingd\target\classes started by CARLOS in C:\IDEA-JAVA\HealthyCooking-main\HealthyCooking-main\healthycookingd)
+2024-04-28 12:46:27,807 INFO c.u.h.HealthycookingdApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2024-04-28 12:46:27,840 INFO o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-04-28 12:46:27,841 INFO o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-04-28 12:46:28,437 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-28 12:46:28,505 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 63 ms. Found 7 JPA repository interfaces.
+2024-04-28 12:46:28,706 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-04-28 12:46:28,739 INFO o.s.w.s.a.s.AnnotationActionEndpointMapping [restartedMain] Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-04-28 12:46:28,997 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2024-04-28 12:46:29,005 INFO o.a.c.h.Http11NioProtocol [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2024-04-28 12:46:29,006 INFO o.a.c.c.StandardService [restartedMain] Starting service [Tomcat]
+2024-04-28 12:46:29,007 INFO o.a.c.c.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-04-28 12:46:29,066 INFO o.a.c.c.C.[.[.[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2024-04-28 12:46:29,067 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1225 ms
+2024-04-28 12:46:29,188 INFO o.h.j.i.u.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-28 12:46:29,267 INFO o.h.Version [restartedMain] HHH000412: Hibernate ORM core version 6.2.24.Final
+2024-04-28 12:46:29,269 INFO o.h.c.Environment [restartedMain] HHH000406: Using bytecode reflection optimizer
+2024-04-28 12:46:29,538 INFO o.s.o.j.p.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-28 12:46:29,562 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2024-04-28 12:46:29,700 INFO c.z.h.p.HikariPool [restartedMain] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7c38ed14
+2024-04-28 12:46:29,701 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2024-04-28 12:46:29,734 WARN o.h.o.deprecation [restartedMain] HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-04-28 12:46:30,514 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [restartedMain] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-28 12:46:30,606 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-28 12:46:31,005 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-28 12:46:31,318 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2024-04-28 12:46:31,335 INFO o.a.c.h.Http11NioProtocol [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2024-04-28 12:46:31,352 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2024-04-28 12:46:31,362 INFO c.u.h.HealthycookingdApplication [restartedMain] Started HealthycookingdApplication in 3.933 seconds (process running for 4.497)
+2024-04-28 12:46:37,235 INFO o.a.c.c.C.[.[.[/] [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-28 12:46:37,235 INFO o.s.w.s.DispatcherServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2024-04-28 12:46:37,236 INFO o.s.w.s.DispatcherServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2024-04-28 12:46:37,882 INFO o.s.a.AbstractOpenApiResource [http-nio-8080-exec-5] Init duration for springdoc-openapi is: 416 ms
+2024-04-28 12:48:01,311 WARN o.h.e.j.s.SqlExceptionHelper [http-nio-8080-exec-3] SQL Error: 0, SQLState: 23503
+2024-04-28 12:48:01,311 ERROR o.h.e.j.s.SqlExceptionHelper [http-nio-8080-exec-3] ERROR: update o delete en «metododepago» viola la llave foránea «fkdrytnmo2van6yfdxh7u3km6ex» en la tabla «perfilusuario»
+  Detail: La llave (id)=(1) todavía es referida desde la tabla «perfilusuario».
+2024-04-28 12:48:01,321 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] [http-nio-8080-exec-3] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.dao.DataIntegrityViolationException: could not execute statement [ERROR: update o delete en «metododepago» viola la llave foránea «fkdrytnmo2van6yfdxh7u3km6ex» en la tabla «perfilusuario»
+  Detail: La llave (id)=(1) todavía es referida desde la tabla «perfilusuario».] [delete from metododepago where id=?]; SQL [delete from metododepago where id=?]; constraint [null]] with root cause
+org.postgresql.util.PSQLException: ERROR: update o delete en «metododepago» viola la llave foránea «fkdrytnmo2van6yfdxh7u3km6ex» en la tabla «perfilusuario»
+  Detail: La llave (id)=(1) todavía es referida desde la tabla «perfilusuario».
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2713)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2401)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:368)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:498)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:415)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:190)
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:152)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:275)
+	at org.hibernate.engine.jdbc.mutation.internal.AbstractMutationExecutor.performNonBatchedMutation(AbstractMutationExecutor.java:107)
+	at org.hibernate.engine.jdbc.mutation.internal.MutationExecutorSingleNonBatched.performNonBatchedOperations(MutationExecutorSingleNonBatched.java:40)
+	at org.hibernate.engine.jdbc.mutation.internal.AbstractMutationExecutor.execute(AbstractMutationExecutor.java:52)
+	at org.hibernate.persister.entity.mutation.DeleteCoordinator.doStaticDelete(DeleteCoordinator.java:304)
+	at org.hibernate.persister.entity.mutation.DeleteCoordinator.coordinateDelete(DeleteCoordinator.java:89)
+	at org.hibernate.persister.entity.AbstractEntityPersister.delete(AbstractEntityPersister.java:2896)
+	at org.hibernate.action.internal.EntityDeleteAction.execute(EntityDeleteAction.java:131)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:635)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:502)
+	at org.hibernate.event.internal.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:364)
+	at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:39)
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:127)
+	at org.hibernate.internal.SessionImpl.doFlush(SessionImpl.java:1412)
+	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:485)
+	at org.hibernate.internal.SessionImpl.flushBeforeTransactionCompletion(SessionImpl.java:2301)
+	at org.hibernate.internal.SessionImpl.beforeTransactionCompletion(SessionImpl.java:1966)
+	at org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl.beforeTransactionCompletion(JdbcCoordinatorImpl.java:439)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.beforeCompletionCallback(JdbcResourceLocalTransactionCoordinatorImpl.java:169)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commit(JdbcResourceLocalTransactionCoordinatorImpl.java:267)
+	at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:101)
+	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:561)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.processCommit(AbstractPlatformTransactionManager.java:743)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.commit(AbstractPlatformTransactionManager.java:711)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.commitTransactionAfterReturning(TransactionAspectSupport.java:660)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:410)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:751)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:703)
+	at com.upc.healthycookingd.controller.MetododepagoController$$SpringCGLIB$$0.delete(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:892)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:798)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doDelete(FrameworkServlet.java:936)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:596)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-04-28 12:51:49,906 WARN o.h.e.j.s.SqlExceptionHelper [http-nio-8080-exec-6] SQL Error: 0, SQLState: 23503
+2024-04-28 12:51:49,907 ERROR o.h.e.j.s.SqlExceptionHelper [http-nio-8080-exec-6] ERROR: update o delete en «registrousuario» viola la llave foránea «fk7ecrvkqmjaqp82q2u22vs1svr» en la tabla «perfilusuario»
+  Detail: La llave (id)=(1) todavía es referida desde la tabla «perfilusuario».
+2024-04-28 12:51:49,908 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] [http-nio-8080-exec-6] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.dao.DataIntegrityViolationException: could not execute statement [ERROR: update o delete en «registrousuario» viola la llave foránea «fk7ecrvkqmjaqp82q2u22vs1svr» en la tabla «perfilusuario»
+  Detail: La llave (id)=(1) todavía es referida desde la tabla «perfilusuario».] [delete from registrousuario where id=?]; SQL [delete from registrousuario where id=?]; constraint [null]] with root cause
+org.postgresql.util.PSQLException: ERROR: update o delete en «registrousuario» viola la llave foránea «fk7ecrvkqmjaqp82q2u22vs1svr» en la tabla «perfilusuario»
+  Detail: La llave (id)=(1) todavía es referida desde la tabla «perfilusuario».
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2713)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2401)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:368)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:498)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:415)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:190)
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:152)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:275)
+	at org.hibernate.engine.jdbc.mutation.internal.AbstractMutationExecutor.performNonBatchedMutation(AbstractMutationExecutor.java:107)
+	at org.hibernate.engine.jdbc.mutation.internal.MutationExecutorSingleNonBatched.performNonBatchedOperations(MutationExecutorSingleNonBatched.java:40)
+	at org.hibernate.engine.jdbc.mutation.internal.AbstractMutationExecutor.execute(AbstractMutationExecutor.java:52)
+	at org.hibernate.persister.entity.mutation.DeleteCoordinator.doStaticDelete(DeleteCoordinator.java:304)
+	at org.hibernate.persister.entity.mutation.DeleteCoordinator.coordinateDelete(DeleteCoordinator.java:89)
+	at org.hibernate.persister.entity.AbstractEntityPersister.delete(AbstractEntityPersister.java:2896)
+	at org.hibernate.action.internal.EntityDeleteAction.execute(EntityDeleteAction.java:131)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:635)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:502)
+	at org.hibernate.event.internal.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:364)
+	at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:39)
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:127)
+	at org.hibernate.internal.SessionImpl.doFlush(SessionImpl.java:1412)
+	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:485)
+	at org.hibernate.internal.SessionImpl.flushBeforeTransactionCompletion(SessionImpl.java:2301)
+	at org.hibernate.internal.SessionImpl.beforeTransactionCompletion(SessionImpl.java:1966)
+	at org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl.beforeTransactionCompletion(JdbcCoordinatorImpl.java:439)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.beforeCompletionCallback(JdbcResourceLocalTransactionCoordinatorImpl.java:169)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commit(JdbcResourceLocalTransactionCoordinatorImpl.java:267)
+	at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:101)
+	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:561)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.processCommit(AbstractPlatformTransactionManager.java:743)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.commit(AbstractPlatformTransactionManager.java:711)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.commitTransactionAfterReturning(TransactionAspectSupport.java:660)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:410)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:751)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:703)
+	at com.upc.healthycookingd.controller.RegistroController$$SpringCGLIB$$0.delete(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:892)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:798)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doDelete(FrameworkServlet.java:936)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:596)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-04-28 12:51:50,310 WARN o.h.e.j.s.SqlExceptionHelper [http-nio-8080-exec-4] SQL Error: 0, SQLState: 23503
+2024-04-28 12:51:50,310 ERROR o.h.e.j.s.SqlExceptionHelper [http-nio-8080-exec-4] ERROR: update o delete en «registrousuario» viola la llave foránea «fk7ecrvkqmjaqp82q2u22vs1svr» en la tabla «perfilusuario»
+  Detail: La llave (id)=(1) todavía es referida desde la tabla «perfilusuario».
+2024-04-28 12:51:50,311 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] [http-nio-8080-exec-4] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.dao.DataIntegrityViolationException: could not execute statement [ERROR: update o delete en «registrousuario» viola la llave foránea «fk7ecrvkqmjaqp82q2u22vs1svr» en la tabla «perfilusuario»
+  Detail: La llave (id)=(1) todavía es referida desde la tabla «perfilusuario».] [delete from registrousuario where id=?]; SQL [delete from registrousuario where id=?]; constraint [null]] with root cause
+org.postgresql.util.PSQLException: ERROR: update o delete en «registrousuario» viola la llave foránea «fk7ecrvkqmjaqp82q2u22vs1svr» en la tabla «perfilusuario»
+  Detail: La llave (id)=(1) todavía es referida desde la tabla «perfilusuario».
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2713)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2401)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:368)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:498)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:415)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:190)
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:152)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:275)
+	at org.hibernate.engine.jdbc.mutation.internal.AbstractMutationExecutor.performNonBatchedMutation(AbstractMutationExecutor.java:107)
+	at org.hibernate.engine.jdbc.mutation.internal.MutationExecutorSingleNonBatched.performNonBatchedOperations(MutationExecutorSingleNonBatched.java:40)
+	at org.hibernate.engine.jdbc.mutation.internal.AbstractMutationExecutor.execute(AbstractMutationExecutor.java:52)
+	at org.hibernate.persister.entity.mutation.DeleteCoordinator.doStaticDelete(DeleteCoordinator.java:304)
+	at org.hibernate.persister.entity.mutation.DeleteCoordinator.coordinateDelete(DeleteCoordinator.java:89)
+	at org.hibernate.persister.entity.AbstractEntityPersister.delete(AbstractEntityPersister.java:2896)
+	at org.hibernate.action.internal.EntityDeleteAction.execute(EntityDeleteAction.java:131)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:635)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:502)
+	at org.hibernate.event.internal.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:364)
+	at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:39)
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:127)
+	at org.hibernate.internal.SessionImpl.doFlush(SessionImpl.java:1412)
+	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:485)
+	at org.hibernate.internal.SessionImpl.flushBeforeTransactionCompletion(SessionImpl.java:2301)
+	at org.hibernate.internal.SessionImpl.beforeTransactionCompletion(SessionImpl.java:1966)
+	at org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl.beforeTransactionCompletion(JdbcCoordinatorImpl.java:439)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.beforeCompletionCallback(JdbcResourceLocalTransactionCoordinatorImpl.java:169)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commit(JdbcResourceLocalTransactionCoordinatorImpl.java:267)
+	at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:101)
+	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:561)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.processCommit(AbstractPlatformTransactionManager.java:743)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.commit(AbstractPlatformTransactionManager.java:711)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.commitTransactionAfterReturning(TransactionAspectSupport.java:660)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:410)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:751)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:703)
+	at com.upc.healthycookingd.controller.RegistroController$$SpringCGLIB$$0.delete(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:892)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:798)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doDelete(FrameworkServlet.java:936)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:596)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-04-28 12:57:29,214 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-28 12:57:29,217 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2024-04-28 12:57:29,219 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2024-04-28 12:59:22,850 INFO c.u.h.HealthycookingdApplication [restartedMain] Starting HealthycookingdApplication using Java 17.0.10 with PID 12548 (C:\IDEA-JAVA\HealthyCooking-main\HealthyCooking-main\healthycookingd\target\classes started by CARLOS in C:\IDEA-JAVA\HealthyCooking-main\HealthyCooking-main\healthycookingd)
+2024-04-28 12:59:22,852 INFO c.u.h.HealthycookingdApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2024-04-28 12:59:22,885 INFO o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-04-28 12:59:22,885 INFO o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-04-28 12:59:23,444 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-28 12:59:23,505 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 56 ms. Found 7 JPA repository interfaces.
+2024-04-28 12:59:23,701 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-04-28 12:59:23,721 INFO o.s.w.s.a.s.AnnotationActionEndpointMapping [restartedMain] Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-04-28 12:59:23,934 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2024-04-28 12:59:23,940 INFO o.a.c.h.Http11NioProtocol [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2024-04-28 12:59:23,942 INFO o.a.c.c.StandardService [restartedMain] Starting service [Tomcat]
+2024-04-28 12:59:23,942 INFO o.a.c.c.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-04-28 12:59:23,990 INFO o.a.c.c.C.[.[.[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2024-04-28 12:59:23,991 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1106 ms
+2024-04-28 12:59:24,097 INFO o.h.j.i.u.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-28 12:59:24,133 INFO o.h.Version [restartedMain] HHH000412: Hibernate ORM core version 6.2.24.Final
+2024-04-28 12:59:24,135 INFO o.h.c.Environment [restartedMain] HHH000406: Using bytecode reflection optimizer
+2024-04-28 12:59:24,331 INFO o.s.o.j.p.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-28 12:59:24,348 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2024-04-28 12:59:24,465 INFO c.z.h.p.HikariPool [restartedMain] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@63ea6fdb
+2024-04-28 12:59:24,466 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2024-04-28 12:59:24,491 WARN o.h.o.deprecation [restartedMain] HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-04-28 12:59:25,170 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [restartedMain] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-28 12:59:25,260 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-28 12:59:25,681 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-28 12:59:25,979 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2024-04-28 12:59:25,993 INFO o.a.c.h.Http11NioProtocol [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2024-04-28 12:59:26,007 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2024-04-28 12:59:26,016 INFO c.u.h.HealthycookingdApplication [restartedMain] Started HealthycookingdApplication in 3.533 seconds (process running for 4.039)
+2024-04-28 12:59:35,683 INFO o.a.c.c.C.[.[.[/] [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-28 12:59:35,684 INFO o.s.w.s.DispatcherServlet [http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
+2024-04-28 12:59:35,685 INFO o.s.w.s.DispatcherServlet [http-nio-8080-exec-2] Completed initialization in 1 ms
+2024-04-28 12:59:36,320 INFO o.s.a.AbstractOpenApiResource [http-nio-8080-exec-3] Init duration for springdoc-openapi is: 377 ms
+2024-04-28 13:04:22,839 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-28 13:04:22,842 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2024-04-28 13:04:22,846 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2024-04-28 13:47:03,131 INFO c.u.h.HealthycookingdApplication [restartedMain] Starting HealthycookingdApplication using Java 17.0.10 with PID 4080 (C:\IDEA-JAVA\HealthyCooking-main\HealthyCooking-main\healthycookingd\target\classes started by CARLOS in C:\IDEA-JAVA\HealthyCooking-main\HealthyCooking-main\healthycookingd)
+2024-04-28 13:47:03,132 INFO c.u.h.HealthycookingdApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2024-04-28 13:47:03,167 INFO o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-04-28 13:47:03,167 INFO o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-04-28 13:47:03,817 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-28 13:47:03,899 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 71 ms. Found 7 JPA repository interfaces.
+2024-04-28 13:47:04,098 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-04-28 13:47:04,132 INFO o.s.w.s.a.s.AnnotationActionEndpointMapping [restartedMain] Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-04-28 13:47:04,398 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2024-04-28 13:47:04,406 INFO o.a.c.h.Http11NioProtocol [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2024-04-28 13:47:04,408 INFO o.a.c.c.StandardService [restartedMain] Starting service [Tomcat]
+2024-04-28 13:47:04,409 INFO o.a.c.c.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-04-28 13:47:04,464 INFO o.a.c.c.C.[.[.[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2024-04-28 13:47:04,465 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1298 ms
+2024-04-28 13:47:04,586 INFO o.h.j.i.u.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-28 13:47:04,663 INFO o.h.Version [restartedMain] HHH000412: Hibernate ORM core version 6.2.24.Final
+2024-04-28 13:47:04,665 INFO o.h.c.Environment [restartedMain] HHH000406: Using bytecode reflection optimizer
+2024-04-28 13:47:04,917 INFO o.s.o.j.p.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-28 13:47:04,940 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2024-04-28 13:47:05,074 INFO c.z.h.p.HikariPool [restartedMain] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@579e80ea
+2024-04-28 13:47:05,076 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2024-04-28 13:47:05,119 WARN o.h.o.deprecation [restartedMain] HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-04-28 13:47:05,907 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [restartedMain] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-28 13:47:06,008 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-28 13:47:06,428 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-28 13:47:06,775 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2024-04-28 13:47:06,792 INFO o.a.c.h.Http11NioProtocol [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2024-04-28 13:47:06,807 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2024-04-28 13:47:06,816 INFO c.u.h.HealthycookingdApplication [restartedMain] Started HealthycookingdApplication in 4.081 seconds (process running for 4.685)
+2024-04-28 13:47:14,377 INFO o.a.c.c.C.[.[.[/] [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-28 13:47:14,377 INFO o.s.w.s.DispatcherServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2024-04-28 13:47:14,379 INFO o.s.w.s.DispatcherServlet [http-nio-8080-exec-1] Completed initialization in 2 ms
+2024-04-28 13:47:15,251 INFO o.s.a.AbstractOpenApiResource [http-nio-8080-exec-4] Init duration for springdoc-openapi is: 628 ms
+2024-04-28 13:49:05,482 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-28 13:49:05,486 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2024-04-28 13:49:05,488 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2024-04-28 13:49:33,254 INFO c.u.h.HealthycookingdApplication [restartedMain] Starting HealthycookingdApplication using Java 17.0.10 with PID 15840 (C:\IDEA-JAVA\HealthyCooking-main\HealthyCooking-main\healthycookingd\target\classes started by CARLOS in C:\IDEA-JAVA\HealthyCooking-main\HealthyCooking-main\healthycookingd)
+2024-04-28 13:49:33,254 INFO c.u.h.HealthycookingdApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2024-04-28 13:49:33,301 INFO o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-04-28 13:49:33,301 INFO o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-04-28 13:49:33,883 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-28 13:49:33,961 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 59 ms. Found 7 JPA repository interfaces.
+2024-04-28 13:49:34,164 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-04-28 13:49:34,196 INFO o.s.w.s.a.s.AnnotationActionEndpointMapping [restartedMain] Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-04-28 13:49:34,462 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2024-04-28 13:49:34,462 INFO o.a.c.h.Http11NioProtocol [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2024-04-28 13:49:34,462 INFO o.a.c.c.StandardService [restartedMain] Starting service [Tomcat]
+2024-04-28 13:49:34,462 INFO o.a.c.c.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-04-28 13:49:34,525 INFO o.a.c.c.C.[.[.[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2024-04-28 13:49:34,525 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1224 ms
+2024-04-28 13:49:34,650 INFO o.h.j.i.u.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-28 13:49:34,713 INFO o.h.Version [restartedMain] HHH000412: Hibernate ORM core version 6.2.24.Final
+2024-04-28 13:49:34,713 INFO o.h.c.Environment [restartedMain] HHH000406: Using bytecode reflection optimizer
+2024-04-28 13:49:34,995 INFO o.s.o.j.p.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-28 13:49:35,029 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2024-04-28 13:49:35,190 INFO c.z.h.p.HikariPool [restartedMain] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@85533c8
+2024-04-28 13:49:35,191 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2024-04-28 13:49:35,234 WARN o.h.o.deprecation [restartedMain] HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-04-28 13:49:36,092 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [restartedMain] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-28 13:49:36,200 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-28 13:49:36,631 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-28 13:49:36,986 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2024-04-28 13:49:37,003 INFO o.a.c.h.Http11NioProtocol [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2024-04-28 13:49:37,019 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2024-04-28 13:49:37,029 INFO c.u.h.HealthycookingdApplication [restartedMain] Started HealthycookingdApplication in 4.15 seconds (process running for 4.755)
+2024-04-28 13:49:46,374 INFO o.a.c.c.C.[.[.[/] [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-28 13:49:46,374 INFO o.s.w.s.DispatcherServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2024-04-28 13:49:46,377 INFO o.s.w.s.DispatcherServlet [http-nio-8080-exec-1] Completed initialization in 3 ms
+2024-04-28 13:49:47,068 INFO o.s.a.AbstractOpenApiResource [http-nio-8080-exec-4] Init duration for springdoc-openapi is: 453 ms
+2024-04-28 13:52:20,250 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-28 13:52:20,254 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2024-04-28 13:52:20,257 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
