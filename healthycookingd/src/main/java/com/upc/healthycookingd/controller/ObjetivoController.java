@@ -10,6 +10,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
 
@@ -23,7 +24,8 @@ public class ObjetivoController {
     public ObjetivoService objetivoService;
 
     Logger logger = LoggerFactory.getLogger(EventoController.class);
-    /*@Transactional
+    @Transactional
+    @PreAuthorize("hasAuthority('ADMIN')")
     @PostMapping("/objetivo")
     public ResponseEntity<ObjetivoDTO> save(@RequestBody ObjetivoDTO objetivoDTO){
         Objetivo objetivo;
@@ -37,8 +39,9 @@ public class ObjetivoController {
 
         }
         return new ResponseEntity<ObjetivoDTO>(objetivoDTO,HttpStatus.OK);
-    }*/
+    }
 
+   @PreAuthorize("hasAuthority('ADMIN')")
     @GetMapping("/objetivos")
     public ResponseEntity<List<ObjetivoDTO>>  list(){
         List<ObjetivoDTO> listDTO;
@@ -47,6 +50,7 @@ public class ObjetivoController {
     }
 
 
+    @PreAuthorize("hasAuthority('ADMIN')")
     @PutMapping("/objetivo")
     @Transactional
     public ResponseEntity<ObjetivoDTO> update(@RequestBody ObjetivoDTO objetivoDetalle) {
@@ -67,6 +71,7 @@ public class ObjetivoController {
 
     }
 
+    @PreAuthorize("hasAuthority('ADMIN')")
     @GetMapping("/objetivos/{prefijo}/")
     public ResponseEntity<List<ObjetivoDTO>>  obtenerObjetivosDesc(@PathVariable(value = "prefijo") String prefijo){
         List<Objetivo> list = objetivoService.obtenerMetodoPorDescripcion(prefijo);

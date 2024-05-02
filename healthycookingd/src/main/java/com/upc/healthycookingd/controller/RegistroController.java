@@ -9,6 +9,7 @@ import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -20,15 +21,16 @@ public class RegistroController {
     @Autowired
     private RegistroService registroService;
 
-    /*@PostMapping("/registro")
-    @Transactional
+    @PreAuthorize("hasAuthority('ADMIN')")
+    @PostMapping("/registro")
     public ResponseEntity<RegistrousuarioDTO> save(@RequestBody RegistrousuarioDTO registroDTO){
         Registrousuario a;
         a = convertToEntity(registroDTO);
         registroDTO = convertToDto(registroService.save(a));
         return new ResponseEntity<RegistrousuarioDTO>(registroDTO, HttpStatus.OK);
-    }*/
+    }
 
+    @PreAuthorize("hasAuthority('VISUALIZER')")
     @GetMapping("/registros")
     public ResponseEntity<List<RegistrousuarioDTO>> list(){
         List<RegistrousuarioDTO> listDTO;
@@ -44,6 +46,7 @@ public class RegistroController {
         return new ResponseEntity<RegistrousuarioDTO>(registroDTO, HttpStatus.OK);
     }
 
+    @PreAuthorize("hasAuthority('VISUALIZER')")
     @GetMapping("/registros/{prefijo}/")
     public ResponseEntity<List<RegistrousuarioDTO>>  obtenerRegistrosNombre(@PathVariable(value = "prefijo") String prefijo){
         List<Registrousuario> list = registroService.ObtenerRegistroNombre(prefijo);

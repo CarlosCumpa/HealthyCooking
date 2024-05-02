@@ -10,6 +10,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
 
@@ -24,6 +25,7 @@ public class RecetaController {
 
     Logger logger = LoggerFactory.getLogger(EventoController.class);
     @Transactional
+    @PreAuthorize("hasAuthority('ADMIN')")
     @PostMapping("/receta")
     public ResponseEntity<RecetaDTO> save(@RequestBody RecetaDTO recetaDTO){
         Receta receta;
@@ -39,6 +41,7 @@ public class RecetaController {
         return new ResponseEntity<RecetaDTO>(recetaDTO,HttpStatus.OK);
     }
 
+    @PreAuthorize("hasAuthority('ADMIN')")
     @PutMapping("/receta")
     @Transactional
     public ResponseEntity<RecetaDTO> update(@RequestBody RecetaDTO recetaDetalle) {
@@ -59,6 +62,7 @@ public class RecetaController {
 
     }
 
+    @PreAuthorize("hasAuthority('ADMIN')")
     @GetMapping("/recetas")
     public ResponseEntity<List<RecetaDTO>>  list(){
         List<RecetaDTO> listDTO;
@@ -66,6 +70,7 @@ public class RecetaController {
         return new ResponseEntity<List<RecetaDTO>>(listDTO, HttpStatus.OK);
     }
 
+    @PreAuthorize("hasAuthority('ADMIN')")
     @GetMapping("/recetas/{prefijo}/objetivo")
     public ResponseEntity<List<RecetaDTO>>  obtenerObjetivosReceta(@PathVariable(value = "prefijo") String prefijo){
         List<Receta> list = recetaService.obtenerReportePorDescripcion(prefijo);
@@ -73,6 +78,7 @@ public class RecetaController {
         return new ResponseEntity<List<RecetaDTO>>(listDto,HttpStatus.OK);
     }
 
+    @PreAuthorize("hasAuthority('ADMIN')")
     @GetMapping("/recetas/{id_objetivo}")
     public ResponseEntity<List<RecetaDTO>> list(@PathVariable Integer id_objetivo){
         List<Receta> list;

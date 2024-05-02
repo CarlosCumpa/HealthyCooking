@@ -12,6 +12,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
 
@@ -25,7 +26,8 @@ public class SuscripcioneController {
     public SuscripcioneService suscripcioneService;
 
     Logger logger = LoggerFactory.getLogger(EventoController.class);
-    /*@Transactional
+    @Transactional
+    @PreAuthorize("hasAuthority('ADMIN')")
     @PostMapping("/suscripcion")
     public ResponseEntity<SuscripcioneDTO> save(@RequestBody SuscripcioneDTO suscripcioneDTO){
         Suscripcione suscripcione;
@@ -39,8 +41,9 @@ public class SuscripcioneController {
 
         }
         return new ResponseEntity<SuscripcioneDTO>(suscripcioneDTO,HttpStatus.OK);
-    }*/
+    }
 
+    @PreAuthorize("hasAuthority('VISUALIZER')")
     @GetMapping("/suscripciones")
     public ResponseEntity<List<SuscripcioneDTO>>  list(){
         List<SuscripcioneDTO> listDTO;
@@ -48,6 +51,7 @@ public class SuscripcioneController {
         return new ResponseEntity<List<SuscripcioneDTO>>(listDTO, HttpStatus.OK);
     }
 
+    @PreAuthorize("hasAuthority('MODIFIER')")
     @PutMapping("/suscripcion")
     @Transactional
     public ResponseEntity<SuscripcioneDTO> update(@RequestBody SuscripcioneDTO suscripcionDetalle) {
@@ -68,6 +72,7 @@ public class SuscripcioneController {
 
     }
 
+    @PreAuthorize("hasAuthority('VISUALIZER')")
     @GetMapping("/suscripciones/{prefijo}/")
     public ResponseEntity<List<SuscripcioneDTO>>  obtenerSuscripType(@PathVariable(value = "prefijo") String prefijo){
         List<Suscripcione> list = suscripcioneService.ObtenerSuscripcionTipo(prefijo);

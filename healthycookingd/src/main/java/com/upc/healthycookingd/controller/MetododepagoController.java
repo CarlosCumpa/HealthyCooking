@@ -16,6 +16,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
 
@@ -29,7 +30,8 @@ public class MetododepagoController {
     public MetododepagoService metododepagoService;
 
     Logger logger = LoggerFactory.getLogger(EventoController.class);
-   /* @Transactional
+    @Transactional
+    @PreAuthorize("hasAuthority('ADMIN')")
     @PostMapping("/metodopago")
     public ResponseEntity<MetododepagoDTO> save(@RequestBody MetododepagoDTO metododepagoDTO){
         Metododepago metododepago;
@@ -43,7 +45,7 @@ public class MetododepagoController {
 
         }
         return new ResponseEntity<MetododepagoDTO>(metododepagoDTO,HttpStatus.OK);
-    }*/
+    }
 
     @GetMapping("/metodopagos")
     public ResponseEntity<List<MetododepagoDTO>>  list(){
@@ -52,6 +54,7 @@ public class MetododepagoController {
         return new ResponseEntity<List<MetododepagoDTO>>(listDTO, HttpStatus.OK);
     }
 
+    @PreAuthorize("hasAuthority('MODIFIER')")
     @PutMapping("/metodopago")
     @Transactional
     public ResponseEntity<MetododepagoDTO> update(@RequestBody MetododepagoDTO metodopagoDetalle) {

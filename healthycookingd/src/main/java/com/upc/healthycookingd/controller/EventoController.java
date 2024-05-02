@@ -9,6 +9,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
 
@@ -22,6 +23,7 @@ public class EventoController {
     public EventoService eventoService;
     Logger logger = LoggerFactory.getLogger(EventoController.class);
     @Transactional
+    @PreAuthorize("hasAuthority('ADMIN')")
     @PostMapping("/evento")
     public ResponseEntity<EventoDTO> save(@RequestBody EventoDTO eventoDTO){
         Evento evento;
@@ -37,6 +39,7 @@ public class EventoController {
         return new ResponseEntity<EventoDTO>(eventoDTO,HttpStatus.OK);
     }
 
+    @PreAuthorize("hasAuthority('ADMIN')")
     @GetMapping("/eventos")
     public ResponseEntity<List<EventoDTO>>  list(){
         List<EventoDTO> listDTO;
@@ -44,6 +47,7 @@ public class EventoController {
         return new ResponseEntity<List<EventoDTO>>(listDTO, HttpStatus.OK);
     }
 
+    @PreAuthorize("hasAuthority('ADMIN')")
     @PutMapping("/evento")
     @Transactional
     public ResponseEntity<EventoDTO> update(@RequestBody EventoDTO eventoDetalle) {
@@ -64,7 +68,7 @@ public class EventoController {
 
     }
 
-
+    @PreAuthorize("hasAuthority('ADMIN')")
     @DeleteMapping("/evento/{id}")
     @Transactional
     public ResponseEntity<EventoDTO> delete(@PathVariable(value = "id") Integer id) {
@@ -82,6 +86,7 @@ public class EventoController {
         }
     }
 
+    @PreAuthorize("hasAuthority('ADMIN')")
     @GetMapping("/eventos/{id}")
     @Transactional
     public ResponseEntity<EventoDTO> buscar(@PathVariable(value = "id") Integer id){

@@ -12,6 +12,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
 
@@ -27,6 +28,7 @@ public class PerfilusuarioController {
 
     Logger logger = LoggerFactory.getLogger(EventoController.class);
     @Transactional
+    @PreAuthorize("hasAuthority('ADMIN')")
     @PostMapping("/perfil")
     public ResponseEntity<PerfilusuarioDTO> save(@RequestBody PerfilusuarioDTO perfilusuarioDTO){
         Perfilusuario perfilusuario;
@@ -42,6 +44,7 @@ public class PerfilusuarioController {
         return new ResponseEntity<PerfilusuarioDTO>(perfilusuarioDTO,HttpStatus.OK);
     }
 
+    @PreAuthorize("hasAuthority('ADMIN')")
     @GetMapping("/perfiles")
     public ResponseEntity<List<PerfilusuarioDTO>>  list(){
         List<PerfilusuarioDTO> listDTO;
